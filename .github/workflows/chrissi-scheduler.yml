@@ -25,6 +25,6 @@ jobs:
         pip install -r requirements.txt
     - name: Run Chrissi
       env:
-        CHRISSI_PASSPORT_ID: ${{ CHRISSI_PASSPORT_ID }}
+        CHRISSI_PASSPORT_ID: ${{ secrets.CHRISSI_PASSPORT_ID }}
       run: |
         python main.py CHRISSI
