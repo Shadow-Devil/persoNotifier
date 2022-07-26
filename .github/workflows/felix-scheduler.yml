@@ -25,6 +25,6 @@ jobs:
         pip install -r requirements.txt
     - name: Run Felix
       env:
-        FELIX_PASSPORT_ID: ${{ FELIX_PASSPORT_ID }}
+        FELIX_PASSPORT_ID: ${{ secrets.FELIX_PASSPORT_ID }}
       run: |
         python main.py FELIX
