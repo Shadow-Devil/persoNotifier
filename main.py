@@ -15,7 +15,6 @@ def main(passport_id: str):
         raise Exception('Zur Abholung bereit.')
 
 if __name__ == '__main__':
-    print(sys.argv)
     if len(sys.argv) < 2:
         print('Usage: python main.py <User>')
         sys.exit(1)
